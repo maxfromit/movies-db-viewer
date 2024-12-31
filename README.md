@@ -4,7 +4,10 @@ This project is a starter template for Nuxt 3 with Nuxt UI, ESLint, and Axios. I
 
 ## Project Description
 
-This project is a movie database viewer built with Nuxt 3. It fetches movie data from a JSON server and displays it in a grid layout. Users can click on a movie to view its (but not really its) details.
+This project is a movie database viewer built with Nuxt 3. It fetches movie data from a JSON server and displays it in a grid layout. Users can click on a movie to view its details.
+
+The project uses `https://my-json-server.typicode.com` to fetch JSON data from the GitHub repository associated with this project.
+So as storing data relies on a third-party service, it could be broken somehow. If this happens, I decided not to replace fetched data with data stored locally but to add logic to handle null data.
 
 ## Features
 
