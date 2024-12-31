@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "id": 001,
+            "id": 1,
             "name": "Crystal Valentine",
             "description": "Qui anim incididunt nulla qui aliquip labore duis. Id duis amet minim ut dolor fugiat est ut. Duis voluptate ullamco sint do nostrud cillum.",
             "duration": "0:50",
@@ -146,7 +146,7 @@
         }
     ],
     "details": {
-        "id": 00016,
+        "id": 16,
         "name": "Cortez Abbott",
         "description": "Pariatur nulla officia magna dolor culpa ut. Consectetur duis dolore elit ea ut fugiat ad aute nisi. Proident ullamco Lorem deserunt laboris anim duis. Pariatur nulla officia magna dolor culpa ut. Consectetur duis dolore elit ea ut fugiat ad aute nisi. Proident ullamco Lorem deserunt laboris anim duis.",
         "duration": "3:18",
