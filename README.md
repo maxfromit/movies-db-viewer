@@ -1,6 +1,17 @@
 # Nuxt UI v3 Starter
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui3.nuxt.dev) to learn more.
+This project is a starter template for Nuxt 3 with Nuxt UI, ESLint, and Axios. It includes a basic setup for a movie database viewer.
+
+## Project Description
+
+This project is a movie database viewer built with Nuxt 3. It fetches movie data from a JSON server and displays it in a grid layout. Users can click on a movie to view its (but not really its) details.
+
+## Features
+
+- Fetch and display movie data
+- View movie details
+- Responsive design
+- Customizable UI components
 
 ## Setup
 
