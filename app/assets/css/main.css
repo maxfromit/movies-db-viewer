@@ -32,3 +32,27 @@ body {
 .main-padding {
   @apply mx-7 my-5;
 }
+
+.custom-h1 {
+  @apply text-3xl leading-9 font-bold;
+}
+
+.custom-h2 {
+  @apply text-xl leading-8 font-bold;
+}
+
+.custom-body {
+  @apply text-xs font-medium;
+}
+
+.custom-body-bage {
+  @apply font-medium leading-3;
+}
+
+.custom-h5 {
+  @apply text-lg leading-5 font-bold;
+}
+
+.custom-footer {
+  @apply text-sm leading-4 font-medium;
+}
