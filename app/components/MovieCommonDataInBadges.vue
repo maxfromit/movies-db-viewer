@@ -18,30 +18,30 @@ const getColorByNumber = (number: number) => {
   }
 }
 
-const capitalizeFirstLetter = (string: string) => {
-  if (!string) {
-    return ""
-  }
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
+// const capitalizeFirstLetter = (string: string) => {
+//   if (!string) {
+//     return ""
+//   }
+//   return string.charAt(0).toUpperCase() + string.slice(1)
+// }
 </script>
 
 <template>
-  <div class="flex gap-1.5 justify-start">
+  <div class="flex gap-1.5">
     <UBadge
       :label="props?.rating"
       :style="{ 'background-color': getColorByNumber(props?.rating) }"
       :ui="{ slots: { base: 'text-white !important' } }"
       icon="i-lucide-star"
-      size="sm"
+      size="xs"
       class="rounded-full"
     />
     <UBadge
-      :label="capitalizeFirstLetter(props?.genre)"
+      :label="props?.genre"
       style="background-color: #2c81fb"
       icon="i-lucide-film"
       size="xs"
-      class="rounded-full"
+      class="rounded-full capitalize"
     />
     <UBadge
       :label="props?.duration"

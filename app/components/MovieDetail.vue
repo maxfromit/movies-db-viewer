@@ -13,13 +13,13 @@ const props = defineProps<{
 <template>
   <div class="grid sm:grid-cols-2 md:grid-cols-8 lg:grid-cols-12 gap-14">
     <div class="flex flex-col gap-4 md:col-span-3 lg:col-span-2">
-      <div class="text-3xl">{{ props?.movie?.name }}</div>
+      <div class="custom-h1">{{ props?.movie?.name }}</div>
       <NuxtImg
         src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/three_thousand_years_of_longing_240x360_crop_center.progressive.jpg?v=1656957331"
         :alt="props?.movie?.name"
         loading="lazy"
-        @error="console.error"
         class="w-full"
+        @error="console.error"
       />
       <MovieCommonDataInBadges
         :rating="props?.movie?.rating"
@@ -29,26 +29,26 @@ const props = defineProps<{
     </div>
 
     <div class="flex flex-col gap-4 md:col-span-4 lg:col-span-3">
-      <div class="text-3xl">Description</div>
-      <div class="text-xs">{{ props?.movie?.description }}</div>
-      <div class="text-3xl">Trivia</div>
+      <div class="custom-h1">Description</div>
+      <div class="custom-body">{{ props?.movie?.description }}</div>
+      <div class="custom-h1">Trivia</div>
       <div class="ml-5">
         <ul
           v-for="(trivia, index) in props?.movie?.trivia"
           :key="index"
-          class="list-disc flex flex-col gap-1 text-xs"
+          class="list-disc flex flex-col gap-1 custom-body"
         >
           <li>
             {{ trivia }}
           </li>
         </ul>
       </div>
-      <div class="text-3xl">Actors</div>
+      <div class="custom-h1">Actors</div>
       <div class="ml-5">
         <ul
           v-for="(actor, key) in props?.movie?.actors"
           :key="key"
-          class="list-disc flex flex-col gap-1 text-xs"
+          class="list-disc flex flex-col gap-1 custom-body"
         >
           <li>
             <ULink
