@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Movie } from "@/pages/index.vue"
-
 const props = defineProps<{
   rating: number
   genre: string
@@ -31,7 +29,6 @@ const getColorByNumber = (number: number) => {
     <UBadge
       :label="props?.rating"
       :style="{ 'background-color': getColorByNumber(props?.rating) }"
-      :ui="{ slots: { base: 'text-white !important' } }"
       icon="i-lucide-star"
       size="xs"
       class="rounded-full"

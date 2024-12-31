@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import axios from "axios"
 
-const route = useRoute()
+// const route = useRoute()
 
-const movieId = computed(() => route?.params?.id)
+// const movieId = computed(() => route?.params?.id)
 
 export type Movie = {
   id: number
@@ -17,7 +17,7 @@ export type Movie = {
   actors: {
     name: string
     imdb_id: string
-  }
+  }[]
 }
 const movie = ref<Movie | null>(null)
 

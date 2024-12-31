@@ -4,10 +4,6 @@ import type { Movie } from "@/pages/movie/[[id]].vue"
 const props = defineProps<{
   movie: Movie
 }>()
-
-// const emit = defineEmits<{
-//   (e: "selected-movie", id: number): void
-// }>()
 </script>
 
 <template>

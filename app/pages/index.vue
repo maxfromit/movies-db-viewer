@@ -20,17 +20,6 @@ export type Movie = {
 //   error,
 //   refresh,
 //   clear,
-// } = await  useAsyncData("movies", ()=>$fetch(
-//       "https://my-json-server.typicode.com/maxfromit/movies-db-viewer/items"
-//     )
-// )
-
-// const {
-//   data: movies,
-//   status,
-//   error,
-//   refresh,
-//   clear,
 // } = await useAsyncData("movies", async () => {
 //   try {
 //     return await $fetch(
@@ -41,6 +30,7 @@ export type Movie = {
 //     return null
 //   }
 // })
+
 const movies = ref<Movie[]>([])
 
 await axios
