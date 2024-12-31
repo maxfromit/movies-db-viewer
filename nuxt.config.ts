@@ -11,6 +11,13 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2024-11-27",
 
+  app: {
+    head: {
+      title: "Movie DB  Viewer",
+    },
+    pageTransition: { name: "page", mode: "out-in" },
+  },
+
   image: {
     imgix: {
       baseURL: "https://assets.imgix.net",
