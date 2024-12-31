@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import colors from "tailwindcss/colors"
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -11,6 +10,12 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-11-27",
+
+  image: {
+    imgix: {
+      baseURL: "https://assets.imgix.net",
+    },
+  },
   appConfig: {
     ui: {
       colors: {
@@ -21,7 +26,7 @@ export default defineNuxtConfig({
         slots: {
           root: "bg-[#292D32]   ring ring-[#292D32]  rounded-[calc(var(--ui-radius)*2)] shadow-sm",
           // header: "p-4 sm:px-6",
-          body: "p-2 sm:p-2",
+          body: "p-2 sm:p-2 h-full",
           // footer: "p-4 sm:px-6",
         },
       },
@@ -52,16 +57,16 @@ export default defineNuxtConfig({
           },
           size: {
             xs: {
-              base: "text-[11px]/3 px-2 py-0.5 gap-1 rounded-[calc(var(--ui-radius))]",
+              base: "text-[11px]/3 custom-body-bage px-2 py-0.5 gap-1 rounded-[calc(var(--ui-radius))]",
               leadingIcon: "size-2",
               leadingAvatarSize: "2xs",
               trailingIcon: "size-2",
             },
             sm: {
-              base: "text-[10px]/3 px-1.5 py-1 gap-1 rounded-[calc(var(--ui-radius))]",
-              leadingIcon: "size-3",
-              leadingAvatarSize: "3xs",
-              trailingIcon: "size-3",
+              base: "text-[12px]/3 px-1.5 py-1 gap-1 rounded-[calc(var(--ui-radius))]",
+              leadingIcon: "size-2",
+              leadingAvatarSize: "2xs",
+              trailingIcon: "size-2",
             },
             md: {
               base: "text-xs px-2 py-1 gap-1 rounded-[calc(var(--ui-radius)*1.5)]",
