@@ -2,9 +2,33 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: "Roboto", sans-serif;
+
+  --color-blue-50: #f4f6f7;
+  --color-blue-100: #e4e8e9;
+  --color-blue-200: #cbd2d6;
+  --color-blue-300: #a7b2b9;
+  --color-blue-400: #7b8a95;
+  --color-blue-500: #606f7a;
+  --color-blue-600: #525e68;
+  --color-blue-700: #475057;
+  --color-blue-800: #3f454b;
+  --color-blue-900: #383d41;
+  --color-blue-950: #292d32;
+
+  --font-size-sm: 0.8rem;
+  --font-size-base: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.75rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.441rem;
+  --font-size-5xl: 3.052rem;
 }
 
 body {
-  @apply bg-gray-100 dark:bg-gray-950;
+  @apply bg-black dark:bg-gray-950  text-white;
+}
+
+.main-padding {
+  @apply mx-7 my-5;
 }
