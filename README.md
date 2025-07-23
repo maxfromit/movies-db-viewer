@@ -1,6 +1,6 @@
 # Movies DB Viewer
 
-Frontend Test Assignment — Nuxt 3 / Vue 3 Movie Database Viewer
+Nuxt 3 / Vue 3 Movie Database Viewer
 
 ## Description
 
